@@ -1,0 +1,56 @@
+
+
+.loader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+  
+  height: 100vh;
+}
+.dot-class{
+  display: flex;
+  gap: 1rem;
+}
+.dot{
+  height: 30px;
+  width: 30px;
+  animation:up-down 0.8s ease infinite alternate;
+  border-radius: 50%;
+}
+
+.dot1{
+  background-color:blue;
+}
+.dot2{
+  background-color:red;
+}
+.dot3{
+  background-color:yellow;
+}
+
+.dot4{
+  background-color:green;
+}
+
+@keyframes up-down {
+  from{
+    transform: translateY(-10px);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+
+.dot:nth-child(2){
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3){
+  animation-delay: 0.5s;
+}
+
+.dot:nth-child(4){
+  animation-delay: 0.6s;
+}
